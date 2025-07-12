@@ -1,23 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>AI Case Study Hub</title>
-  <style>
-    body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-         display:flex;flex-direction:column;align-items:center;padding:80px 20px;background:#f4f4f4;min-height:100vh;}
-    h1{font-size:2.4rem;margin-bottom:.5rem;color:#2c3e50}
-    p{margin-bottom:1.5rem;color:#333}
-    .btn{display:inline-block;margin:12px;padding:15px 28px;background:#0056b3;color:#fff;text-decoration:none;
-         border-radius:6px;font-weight:600} .btn:hover{background:#003e80}
-  </style>
+    <meta charset="UTF-8">
+    <title>AI Case Study Hub</title>
+    <style>
+        
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background: #f4f4f4;
+            padding: 50px;
+        }
+        a {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 25px;
+            background: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background: #003e80;
+        }
+        /* ─── Coming Soon cards ───────────────────────────── */
+.coming-soon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cs-card {
+  width: 240px;
+  padding: 20px;
+  background: #ffffff;
+  border: 2px dashed #888;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+.cs-title {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.cs-note {
+  color: #666;
+  font-size: 0.9rem;
+}
+/* Top-left back-to-site link */
+.top-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: transparent;
+  color: #0056b3;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0;
+}
+.top-link:hover {
+  text-decoration: underline;
+}
+    </style>
 </head>
 <body>
-  <h1>AI Case Study Hub</h1>
-  <p>Explore completed interactive case studies.</p>
+    <h1>Welcome to the AI Hub Case Study Library</h1>
+    <p>Explore completed interactive case studies.</p>
 
-  <!-- Link to the live SMART Prompting case -->
-  <a class="btn" href="https://sstokes3001.github.io/interactive-case-study/">SMART Prompting Study</a>
+        <p><em>More interactive projects are on the way &mdash; stay tuned!</em></p>
+
+    <a href="https://sstokes3001.github.io/interactive-case-study/">SMART Prompting Study</a>
+    <!-- ----- Coming Soon section ----- -->
+<h2 style="margin-top:60px;">Coming Soon</h2>
+
+<div class="coming-soon">
+  <div class="cs-card">
+    <span class="cs-title">Clinical Reasoning 101</span>
+    <span class="cs-note">(launching Fall 2025)</span>
+  </div>
+
+  <div class="cs-card">
+    <span class="cs-title">AI Sandbox</span>
+    <span class="cs-note">(under construction)</span>
+  </div>
+
+  <!-- Add more placeholder cards as you plan new cases -->
+</div>
 </body>
+<a href="https://sites.google.com/view/ai-for-faculty/" class="top-link">
+  &larr; Back to AI for Faculty
+</a>
+<footer>
+    <p>© 2025 AI Case Study Hub</p>
+</footer>
 </html>
