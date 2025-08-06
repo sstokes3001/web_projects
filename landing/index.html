@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>AI Case Study Hub</title>
     <style>
-        
         body {
             font-family: sans-serif;
             text-align: center;
@@ -66,32 +65,42 @@
 .top-link:hover {
   text-decoration: underline;
 }
-
-/* --- Interactive ARC-PA Guide Project Box --- */
-.project-box {
-    background: #1976d2;
+/* ─── Case Study Boxes ───────────────────────────── */
+.case-study-box {
+    background-color: #0056b3;
     color: #fff;
-    border-radius: 10px;
-    padding: 32px 24px;
-    margin: 32px auto 0 auto;
-    max-width: 420px;
-    box-shadow: 0 4px 12px rgba(25, 118, 210, 0.15);
+    border-radius: 8px;
+    padding: 32px;
+    margin-bottom: 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
-.project-box h2 {
+.case-study-box h2 {
     margin-top: 0;
-    margin-bottom: 12px;
-    font-weight: 700;
+    margin-bottom: 16px;
 }
-.project-box p {
+.case-study-box p {
+    font-size: 1.15em;
     margin-bottom: 20px;
-    font-size: 1rem;
 }
-.project-box .btn {
-    background: #1565c0;
+.case-btn {
+    background: #fff;
+    color: #0056b3;
+    border-radius: 4px;
+    padding: 12px 32px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    display: inline-block;
+    margin-top: 8px;
 }
-.project-box .btn:hover {
-    background: #104a91;
+.case-btn:hover {
+    background: #0056b3;
+    color: #fff;
+    border: 1px solid #fff;
 }
     </style>
 </head>
@@ -99,17 +108,25 @@
     <h1>Welcome to the AI Hub Case Study Library</h1>
     <p>Explore completed interactive case studies.</p>
 
-        <p><em>More interactive projects are on the way &mdash; stay tuned!</em></p>
+    <p><em>More interactive projects are on the way &mdash; stay tuned!</em></p>
 
- <!-- Link to the live SMART Prompting case -->
-  <a class="btn" href="https://sstokes3001.github.io/interactive-case-study/">SMART Prompting Study</a>
+    <!-- SMART Prompting Case Study Section -->
+    <div class="case-study-box">
+      <h2>SMART Prompting Study</h2>
+      <p>
+        Create an effective AI prompt using the SMART technique and see how different LLMs answer.
+      </p>
+      <a href="https://sstokes3001.github.io/interactive-case-study/" class="case-btn">Launch</a>
+    </div>
 
-<!-- Interactive ARC-PA Guide Project Box -->
-<div class="project-box">
-  <h2>Interactive ARC-PA Guide</h2>
-  <p>Dive into the ARC-PA accreditation process with this interactive project.</p>
-  <a href="https://sstokes3001.github.io/arc-pa-guide/" class="btn">View ARC-PA Guide</a>
-</div>
+    <!-- ARC-PA Interactive Case Study Section -->
+    <div class="case-study-box">
+      <h2>ARC-PA Interactive Case Study</h2>
+      <p>
+        Explore interactive ARC-PA scenarios and clinical reasoning.
+      </p>
+      <a href="https://sstokes3001.github.io/arc-pa-case-study/" class="case-btn">Launch</a>
+    </div>
 
     <!-- ----- Coming Soon section ----- -->
 <h2 style="margin-top:60px;">Coming Soon</h2>
